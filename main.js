@@ -22,7 +22,7 @@ function deleteBlog() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (blogs.length === 0) {
-        reject('ERROR: No blog present');
+        reject('ERROR');
       } else {
         const deletedBlog = blogs.pop();
         resolve(deletedBlog);
